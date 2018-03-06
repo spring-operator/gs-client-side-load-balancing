@@ -12,7 +12,8 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
-apply plugin: 'org.springframework.boot' 
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
 
 bootJar {
   baseName = 'user'
@@ -29,7 +30,7 @@ repositories {
 
 
 dependencies {
-  compile('org.springframework.cloud:spring-cloud-starter-ribbon')
+  compile('org.springframework.cloud:spring-cloud-starter-netflix-ribbon')
   compile('org.springframework.boot:spring-boot-starter-web')
   testCompile('org.springframework.boot:spring-boot-starter-test') 
 }
