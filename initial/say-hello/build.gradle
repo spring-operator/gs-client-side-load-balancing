@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '1.5.10.RELEASE'
+		springBootVersion = '2.0.0.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -30,7 +30,6 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	testCompile('org.springframework.boot:spring-boot-starter-test') 
 }
-
 
 eclipse {
 	classpath {
