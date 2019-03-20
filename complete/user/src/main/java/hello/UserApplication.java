@@ -28,7 +28,7 @@ public class UserApplication {
 
   @RequestMapping("/hi")
   public String hi(@RequestParam(value="name", defaultValue="Artaban") String name) {
-    String greeting = this.restTemplate.getForObject("http://say-hello/greeting", String.class);
+    String greeting = this.restTemplate.getForObject("https://say-hello/greeting", String.class);
     return String.format("%s, %s!", greeting, name);
   }
 
